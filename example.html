@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Exmaple Of jpopup navlist</title>
+
+	<script type="text/javascript">
+		$(function () {
+			var $btn = $('.btn-clickme');
+			var popup = $('.popup').jpopup({
+				duration: 500
+			});
+			$btn.click(function () {
+				popup.show();
+			});
+		});
+	</script>
+</head>
+<body>
+	
+	<button class="btn btn-clickme">点击我</button>
+
+	<div class="jpopup popup">
+		<div class="popup-container">
+			<span class="close"></span>
+			<div class="header">
+				<h3>i am header</h3>
+			</div>
+			<div class="popup-body clearfix">
+				<div class="nav nav-left">
+					<ul class="clearfix">
+						<li><a> 内容标题1 </a></li>
+						<li><a> 内容标题2 </a></li>
+						<li><a> 内容标题2 </a></li>
+					</ul>
+				</div>
+				<div class="content-body content-right">
+					<div class="content">
+						标题1的内容
+					</div>
+					<div class="content">
+						标题2的内容
+					</div>
+					<div class="content">
+						标题3的内容
+					</div>
+					<div class="content">
+						标题4的内容
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+
+</html>
